@@ -1,3 +1,9 @@
+def conversion(titulo, longitud_malla):
+    paso1 = titulo * float(768)
+    paso2 = float(1000) * float(453) / float(paso1)
+    resultado = paso2 ** float(0.5)
+    return resultado / longitud_malla  # Realiza la división aquí
+
 dato = False
 contador = 0
 
@@ -62,8 +68,3 @@ else:
     print("Usuario incorrecto")
 
 
-def conversion(titulo, longitud_malla):
-    paso1 = titulo * float(768)
-    paso2 = float(1000) * float(453) / float(paso1)
-    resultado = paso2 ** float(0.5)
-    return resultado / longitud_malla  # Mover la división aquí para usar longitud_malla en el cálculo
